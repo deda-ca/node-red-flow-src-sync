@@ -1,0 +1,55 @@
+export type Config = {
+    nodeRedUrl: string;
+    allowSelfSignedCertificates?: boolean;
+    bearerToken?: string | null;
+    sourcePath?: string | null;
+    cleanOnStart?: boolean;
+
+    configFilePath: string;
+};
+
+export type FlowsResponse = {
+    flows: any[];
+    rev: string;
+};
+
+export type FlowsItem = {
+    id: string;
+    type: 'tab' | 'subflow' | 'function' | 'ui-template';
+    label: string;
+    name: string;
+    z?: string;
+    func?: string;
+    format?: string;
+    initialize?: string;
+    finalize?: string;
+    info?: string;
+};
+
+export type Flows = FlowsItem[];
+
+export type ManifestFolder = {
+    id: string; // The id as found in the flows file
+    type: string; // The type of the folder, either 'tab' | 'subflow';
+    name: string; // The name as found in the flows file (label for tabs, name for subflows)
+    folderName: string; // This is the sanitized and unique folder name.
+};
+
+export type ManifestFile = {
+    type: 'format' | 'func' | 'initialize' | 'finalize' | 'info';
+    name: string; // The baseFileName including extensions based on the type.
+    content: string;
+};
+
+export type ManifestItem = {
+    id: string; // The id as found in the flows file
+    type: string; // The type of the item, either 'function' | 'ui-template';
+    name: string; // The item name as found in the flows file
+    folderName: string; // The sanitized folder name.
+    baseFileName: string; // The sanitized file name including increments if files with the name already exists.
+    files: ManifestFile[];
+};
+
+export type Manifest = {
+    [id: string]: ManifestItem;
+};

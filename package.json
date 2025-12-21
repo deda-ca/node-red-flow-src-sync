@@ -1,0 +1,15 @@
+{
+    "name": "node-red-src-editor",
+    "version": "1.0.0",
+    "description": "Remotely edit and synchronize node-red nodes within IDEs such as vs-code.",
+    "license": "ISC",
+    "author": "Charbel Choueiri <charbel.choueiri@gmail.com>",
+    "type": "module",
+    "main": "index.ts",
+    "scripts": {
+        "test": "jest"
+    },
+    "devDependencies": {
+        "@types/node": "^25.0.3"
+    }
+}
