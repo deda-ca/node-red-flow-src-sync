@@ -6,8 +6,10 @@
     "author": "Charbel Choueiri <charbel.choueiri@gmail.com>",
     "type": "module",
     "main": "index.ts",
+    "types": "src/types.ts",
     "scripts": {
-        "test": "jest"
+        "test": "jest",
+        "start": "node ./src/watcher.ts"
     },
     "devDependencies": {
         "@types/node": "^25.0.3",

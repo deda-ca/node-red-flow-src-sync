@@ -9,7 +9,7 @@
             "request": "launch",
             "name": "Launch Program",
             "skipFiles": ["<node_internals>/**"],
-            "program": "${workspaceFolder}/index.ts",
+            "program": "${workspaceFolder}/src/watcher.ts",
             "args": ["~/Projects/iot-node-red-src/config.js"]
         }
     ]
