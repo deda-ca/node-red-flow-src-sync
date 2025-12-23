@@ -1,12 +1,20 @@
 {
     "name": "node-red-flow-src-sync",
     "version": "0.8.0",
-    "description": "Remotely edit and synchronize node-red nodes within IDEs such as vs-code.",
-    "license": "ISC",
+    "description": "Remotely edit and synchronize node-red flows within IDEs such as vs-code.",
+    "license": "MIT",
     "author": "Charbel Choueiri <charbel.choueiri@gmail.com>",
     "type": "module",
     "main": "index.ts",
     "types": "src/types.ts",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/deda-ca/node-red-flow-src-sync.git"
+    },
+    "bugs": {
+        "url": "https://github.com/deda-ca/node-red-flow-src-sync/issues"
+    },
+    "homepage": "https://github.com/deda-ca/node-red-flow-src-sync#readme",
     "scripts": {
         "test": "jest",
         "start": "node ./src/watcher.ts"
