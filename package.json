@@ -1,6 +1,6 @@
 {
-    "name": "node-red-src-editor",
-    "version": "1.0.0",
+    "name": "node-red-flow-src-sync",
+    "version": "0.8.0",
     "description": "Remotely edit and synchronize node-red nodes within IDEs such as vs-code.",
     "license": "ISC",
     "author": "Charbel Choueiri <charbel.choueiri@gmail.com>",

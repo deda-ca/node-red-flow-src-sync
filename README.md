@@ -1,6 +1,6 @@
-# node-red-src-editor
+# node-red-flow-src-sync
 
-Remotely edit and synchronize Node-RED nodes within IDEs such as VS Code.
+Remotely edit and synchronize Node-RED flows within IDEs such as VS Code.
 
 ## Features
 
@@ -23,7 +23,7 @@ Remotely edit and synchronize Node-RED nodes within IDEs such as VS Code.
 
     ```bash
     git clone <repository-url>
-    cd node-red-src-editor
+    cd node-red-flow-src-sync
     ```
 
 2. Install dependencies:
