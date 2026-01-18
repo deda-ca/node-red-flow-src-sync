@@ -2,6 +2,15 @@ import WebSocket from 'ws';
 import type { Flows, FlowsResponse } from './types.ts';
 
 /**
+ * For authentication:
+ * URL: /auth/token
+ * Method: POST
+ * Headers: { 'Node-Red-Api-Version': 'v2', 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8' }
+ * Body: client_id=node-red-editor&grant_type=password&scope=&username=admin&password=password
+ * Response: { "access_token": "....", "expires_in": 604800, "token_type": "Bearer" }
+ */
+
+/**
  * Gets the flows from Node-Red.
  *
  * @param {string} nodeRedUrl - The URL to Node-Red.
